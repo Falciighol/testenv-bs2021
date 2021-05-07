@@ -1,0 +1,83 @@
+{
+  "modelVersion" : "2.0",
+  "id" : "customHandsontable",
+  "name" : "Handsontable",
+  "lastUpdate" : 1620341806480,
+  "template" : "@customHandsontable.tpl.html",
+  "controller" : "@customHandsontable.ctrl.js",
+  "custom" : true,
+  "properties" : [
+    {
+      "label" : "DataSet",
+      "name" : "dataset",
+      "type" : "text",
+      "bond" : "variable"
+    },
+    {
+      "label" : "Settings",
+      "name" : "settings",
+      "caption" : "Help: https://handsontable.com/docs/8.3.2/tutorial-introduction.html",
+      "help" : "",
+      "type" : "text",
+      "bond" : "variable"
+    },
+    {
+      "label" : "Columns",
+      "name" : "columns",
+      "type" : "collection",
+      "bond" : "expression"
+    },
+    {
+      "label" : "Column Headers",
+      "name" : "colHeaders",
+      "type" : "collection",
+      "bond" : "expression"
+    },
+    {
+      "label" : "test",
+      "name" : "test",
+      "type" : "text",
+      "bond" : "variable"
+    }
+  ],
+  "assets" : [
+    {
+      "id" : "cab457d6-080a-4aba-948f-a44d45ed231c",
+      "name" : "style.css",
+      "type" : "css",
+      "order" : 3,
+      "external" : false
+    },
+    {
+      "id" : "81d43c66-80c0-42d4-8dbd-b11c1f631591",
+      "name" : "handsontable.full.css",
+      "type" : "css",
+      "order" : 1,
+      "external" : false
+    },
+    {
+      "id" : "8fe2a939-3349-41e9-a763-c83d34b53d46",
+      "name" : "all.min.js",
+      "type" : "js",
+      "order" : 6,
+      "external" : false
+    },
+    {
+      "id" : "3e5dd65f-016d-4cfe-9170-ac9e40c9fb14",
+      "name" : "all.min.css",
+      "type" : "css",
+      "order" : 2,
+      "external" : false
+    },
+    {
+      "id" : "95517708-640e-470a-86c2-cba641779772",
+      "name" : "handsontable.full.js",
+      "type" : "js",
+      "order" : 5,
+      "external" : false
+    }
+  ],
+  "requiredModules" : [ ],
+  "type" : "widget",
+  "hasHelp" : false
+}

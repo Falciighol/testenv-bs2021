@@ -1,0 +1,537 @@
+{
+  "modelVersion" : "2.0",
+  "id" : "test",
+  "name" : "test",
+  "lastUpdate" : 1620396803683,
+  "rows" : [
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 4,
+          "lg" : 4
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "required" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "minLength" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "maxLength" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "readOnly" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "[0].userId"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 4
+          },
+          "placeholder" : {
+            "type" : "interpolation"
+          },
+          "value" : {
+            "type" : "variable",
+            "value" : "result[0].userId"
+          },
+          "type" : {
+            "type" : "constant",
+            "value" : "number"
+          },
+          "min" : {
+            "type" : "constant",
+            "value" : 0
+          },
+          "max" : {
+            "type" : "constant",
+            "value" : 100
+          },
+          "step" : {
+            "type" : "constant",
+            "value" : 1
+          }
+        },
+        "reference" : "d1102f49-73f0-4117-9538-7250aa2584b3",
+        "hasValidationError" : false,
+        "id" : "pbInput"
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "Widget"
+          },
+          "level" : {
+            "type" : "constant",
+            "value" : "Level 2"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          }
+        },
+        "reference" : "d0a6e3cc-0cc7-42a8-8136-7839efc9a255",
+        "hasValidationError" : false,
+        "id" : "pbTitle"
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "dataset" : {
+            "type" : "variable",
+            "value" : "result"
+          },
+          "settings" : {
+            "type" : "variable",
+            "value" : "settings"
+          },
+          "columns" : {
+            "type" : "expression",
+            "value" : "settings.columns"
+          },
+          "colHeaders" : {
+            "type" : "expression",
+            "value" : "settings.colHeaders"
+          },
+          "test" : {
+            "type" : "variable",
+            "value" : "test"
+          }
+        },
+        "reference" : "be691eed-6f88-4574-910c-28cca87f600f",
+        "hasValidationError" : false,
+        "id" : "customHandsontable"
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "Designer"
+          },
+          "level" : {
+            "type" : "constant",
+            "value" : "Level 2"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          }
+        },
+        "reference" : "197e2cbe-20f6-44f1-8922-5a9c491a4dc9",
+        "hasValidationError" : false,
+        "id" : "pbTitle"
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "disabled" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "<i class=\"fas fa-save\"></i> Save"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          },
+          "buttonStyle" : {
+            "type" : "constant",
+            "value" : "default"
+          },
+          "javascript" : {
+            "type" : "variable",
+            "value" : "watcher"
+          }
+        },
+        "reference" : "dc2f5f06-208f-46c8-b3b4-0e359e015d6b",
+        "hasValidationError" : false,
+        "id" : "customJavascriptButton"
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 4
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "required" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "minLength" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "maxLength" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "readOnly" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "SUM"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 4
+          },
+          "placeholder" : {
+            "type" : "interpolation"
+          },
+          "value" : {
+            "type" : "variable",
+            "value" : "sum"
+          },
+          "type" : {
+            "type" : "constant",
+            "value" : "text"
+          },
+          "min" : {
+            "type" : "constant"
+          },
+          "max" : {
+            "type" : "constant"
+          },
+          "step" : {
+            "type" : "constant",
+            "value" : 1
+          }
+        },
+        "reference" : "4953091a-9335-48cf-b5f0-bce3666f6444",
+        "hasValidationError" : false,
+        "id" : "pbInput"
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Default label"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 4
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "<b>TEST</b>\n<pre class=\"text-info\">\n{{ test }}\n</pre>\n<hr/>\n<b>RESULT</b>\n<pre class=\"text-info\">\n{{ result | json }}\n</pre>\n<hr/>"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          }
+        },
+        "reference" : "122dd858-1828-4d40-a030-7cbab564231f",
+        "hasValidationError" : false,
+        "id" : "pbText"
+      }
+    ]
+  ],
+  "assets" : [
+    {
+      "id" : "ec3aad2e-aceb-4b74-8a0c-2c9ef6d6e0e7",
+      "name" : "style.css",
+      "type" : "css",
+      "order" : 0,
+      "external" : false
+    },
+    {
+      "id" : "b51db191-9bb9-406d-995a-1f6631055360",
+      "name" : "localization.json",
+      "type" : "json",
+      "order" : 0,
+      "external" : false
+    }
+  ],
+  "inactiveAssets" : [ ],
+  "variables" : {
+    "data" : {
+      "type" : "json",
+      "value" : [
+        "[{",
+        "    \"userId\": 1,",
+        "    \"id\": 1,",
+        "    \"title\": \"delectus aut autem\",",
+        "    \"completed\": false",
+        "},",
+        "{",
+        "    \"userId\": 1,",
+        "    \"id\": 2,",
+        "    \"title\": \"quis ut nam facilis et officia qui\",",
+        "    \"completed\": false",
+        "},",
+        "{",
+        "    \"userId\": 1,",
+        "    \"id\": 3,",
+        "    \"title\": \"fugiat veniam minus\",",
+        "    \"completed\": false",
+        "},",
+        "{",
+        "    \"userId\": 1,",
+        "    \"id\": 4,",
+        "    \"title\": \"et porro tempora\",",
+        "    \"completed\": true",
+        "},",
+        "{",
+        "    \"userId\": 1,",
+        "    \"id\": 5,",
+        "    \"title\": \"laboriosam mollitia et enim quasi adipisci quia provident illum\",",
+        "    \"completed\": false",
+        "},",
+        "{",
+        "    \"userId\": 1,",
+        "    \"id\": 6,",
+        "    \"title\": \"qui ullam ratione quibusdam voluptatem quia omnis\",",
+        "    \"completed\": false",
+        "},",
+        "{",
+        "    \"userId\": 1,",
+        "    \"id\": 7,",
+        "    \"title\": \"illo expedita consequatur quia in\",",
+        "    \"completed\": false",
+        "},",
+        "{",
+        "    \"userId\": 1,",
+        "    \"id\": 8,",
+        "    \"title\": \"quo adipisci enim quam ut ab\",",
+        "    \"completed\": true",
+        "},",
+        "{",
+        "    \"userId\": 1,",
+        "    \"id\": 9,",
+        "    \"title\": \"molestiae perspiciatis ipsa\",",
+        "    \"completed\": false",
+        "},",
+        "{",
+        "    \"userId\": 1,",
+        "    \"id\": 10,",
+        "    \"title\": \"illo est ratione doloremque quia maiores aut\",",
+        "    \"completed\": true",
+        "}]"
+      ],
+      "exposed" : false
+    },
+    "result" : {
+      "type" : "json",
+      "value" : [
+        "[]"
+      ],
+      "exposed" : false
+    },
+    "watcher" : {
+      "type" : "expression",
+      "value" : [
+        "$data.result;",
+        "return function () {",
+        "    $data.result = $data.data;",
+        "    console.log(\"RESULT WATCHER -> \", $data.result)",
+        "}"
+      ],
+      "exposed" : false
+    },
+    "settings" : {
+      "type" : "expression",
+      "value" : [
+        "let settings = {",
+        "    data: $data.data,",
+        "    columnSorting: true,",
+        "    rowHeaders: false,",
+        "    filters: true,",
+        "    dropdownMenu: true,",
+        "    colHeaders: ['Task Id', 'Title', 'Completed'],",
+        "    columns: [",
+        "        {",
+        "            data: 'userId',",
+        "            type: 'numeric'",
+        "        },",
+        "        {",
+        "            data: 'title'",
+        "        },",
+        "        {",
+        "            data: 'completed',",
+        "            type: 'checkbox'",
+        "        }",
+        "    ],",
+        "    afterChange: function (change, source) {",
+        "        //console.log(\"Changed -> \", $data.data)",
+        "        $data.watcher();",
+        "    }",
+        "}",
+        "",
+        "return settings;"
+      ],
+      "exposed" : false
+    },
+    "test" : {
+      "type" : "constant",
+      "exposed" : false
+    },
+    "sum" : {
+      "type" : "constant",
+      "exposed" : false
+    },
+    "sumJS" : {
+      "type" : "expression",
+      "value" : [
+        "$data.data;",
+        "",
+        "$data.sum = 0;",
+        "$data.data.map(e => {",
+        "    $data.sum += e.userId;",
+        "})",
+        "console.log(\"SUM -> \", sum)"
+      ],
+      "exposed" : false
+    }
+  },
+  "hasValidationError" : false,
+  "uuid" : "0460f741-d386-4c09-a720-18de0e1a961d",
+  "type" : "page",
+  "description" : "Page generated with Bonita UI designer"
+}
