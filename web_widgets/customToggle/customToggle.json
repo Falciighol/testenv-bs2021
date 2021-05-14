@@ -1,0 +1,65 @@
+{
+  "modelVersion" : "2.0",
+  "id" : "customToggle",
+  "name" : "Toggle",
+  "lastUpdate" : 1621032228577,
+  "template" : "@customToggle.tpl.html",
+  "controller" : "@customToggle.ctrl.js",
+  "custom" : true,
+  "properties" : [
+    {
+      "label" : "Value",
+      "name" : "value",
+      "type" : "text",
+      "defaultValue" : "true",
+      "bond" : "expression"
+    },
+    {
+      "label" : "Label",
+      "name" : "label",
+      "type" : "text",
+      "defaultValue" : "Switch",
+      "bond" : "expression"
+    }
+  ],
+  "assets" : [
+    {
+      "id" : "a7bbdc0c-1f1b-4a73-ac65-a65cf3d88c13",
+      "name" : "all.css",
+      "type" : "css",
+      "order" : 4,
+      "external" : false
+    },
+    {
+      "id" : "26c33343-a39b-4595-a8d5-a0ac0917c564",
+      "name" : "bootstrap4-toggle.min.css",
+      "type" : "css",
+      "order" : 6,
+      "external" : false
+    },
+    {
+      "id" : "b2790d85-d782-4826-b7bc-a8cacfc023fe",
+      "name" : "jquery-3.3.1.slim.min.js",
+      "type" : "js",
+      "order" : 9,
+      "external" : false
+    },
+    {
+      "id" : "39b8e833-792c-45aa-8ebd-0220c0607cdc",
+      "name" : "bootstrap4-toggle.min.js",
+      "type" : "js",
+      "order" : 10,
+      "external" : false
+    },
+    {
+      "id" : "d6bdc805-efb2-48f5-9564-4171b280b8f6",
+      "name" : "all.js",
+      "type" : "js",
+      "order" : 8,
+      "external" : false
+    }
+  ],
+  "requiredModules" : [ ],
+  "type" : "widget",
+  "hasHelp" : false
+}
