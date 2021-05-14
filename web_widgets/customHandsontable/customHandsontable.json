@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "customHandsontable",
   "name" : "Handsontable",
-  "lastUpdate" : 1620341806480,
+  "lastUpdate" : 1620771553777,
   "template" : "@customHandsontable.tpl.html",
   "controller" : "@customHandsontable.ctrl.js",
   "custom" : true,

@@ -5,7 +5,7 @@ function HandsontableCtrl($scope) {
     $scope.test = null;
     
     let updateTest = (e) => {
-        console.log("Update test")
+        //console.log("Update test")
         $scope.test = `${e}`;
     }
     
@@ -14,7 +14,7 @@ function HandsontableCtrl($scope) {
     vm.selectedValue = null;
     
     $scope.$watch("test", function(newValue, oldValue){
-        console.log("TEST CHANGE")
+        // console.log("TEST CHANGE")
         $scope.properties.test = newValue;
     }, true);
     

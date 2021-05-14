@@ -1,0 +1,69 @@
+{
+  "modelVersion" : "2.0",
+  "id" : "GroupList",
+  "name" : "GroupList",
+  "lastUpdate" : 1621008079147,
+  "rows" : [
+    [
+      {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "repeatedCollection" : {
+            "type" : "variable",
+            "value" : ""
+          }
+        },
+        "reference" : "a646c35e-7c80-41c3-abef-58aab6b5378c",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [
+          [ ]
+        ]
+      }
+    ]
+  ],
+  "assets" : [
+    {
+      "id" : "916b685e-3bb1-40e7-8eb7-052ecc806ac8",
+      "name" : "style.css",
+      "type" : "css",
+      "order" : 0,
+      "external" : false
+    },
+    {
+      "id" : "a79ea4c5-4c85-47cd-bad9-282699df4670",
+      "name" : "localization.json",
+      "type" : "json",
+      "order" : 0,
+      "external" : false
+    }
+  ],
+  "inactiveAssets" : [ ],
+  "variables" : {
+    "groups" : {
+      "type" : "url",
+      "value" : [
+        "../API/identity/group?p=0&c=10&o=id%20ASC"
+      ],
+      "exposed" : false
+    }
+  },
+  "hasValidationError" : false,
+  "uuid" : "f009665f-bc5a-4e64-8ed3-fbc4e54dc0e0",
+  "type" : "page",
+  "description" : "Page generated with Bonita UI designer"
+}
