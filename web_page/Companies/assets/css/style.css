@@ -1,0 +1,163 @@
+/* Add margin bottom and top to each widgets */
+.component {
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
+/* Set cursor to pointer on table with selectable rows */
+.table-hover tr {
+    cursor: pointer;
+}
+
+/* Set a red border to invalid input fields in forms */
+input[type='text'].ng-invalid.ng-dirty, input[type='email'].ng-invalid.ng-dirty,
+input[type='number'].ng-invalid.ng-dirty, input[type='password'].ng-invalid.ng-dirty {
+  border-color: #C00;
+  border-width: 1px;
+}
+
+
+/* Add a red star after required inputs */
+.control-label--required:after {
+  content: " *";
+  color: #C00;
+}
+.btn-invalid{
+    border-color: #C00;
+    border-width: 1px;
+}
+
+.bonita-modal{
+    overflow-y: auto;
+}
+
+.modal-open .datepicker,
+.modal-open .timepicker {
+    z-index: 9999;
+}
+
+.main {
+    margin: 15px auto 10px auto;
+    padding: 15px 50px;
+    border: 1px solid #eee;
+}
+
+.addButton {
+    margin-top: 25px;
+}
+
+.addButton button {
+    background-color: #FFF;
+    border: 1px solid #233DF9;
+    color: #233DF9;
+    transition: all .5s;
+}
+
+.addButton button:hover {
+    background-color: #233DF9;
+    /*border: 1px solid #FFF;*/
+    color: #FFF;
+}
+
+.addButton button:focus {
+    background-color: #233DF9;
+    /*border: 1px solid #FFF;*/
+    color: #FFF;
+}
+
+.addButton button:active {
+    background-color: #233DF9 !important;
+    /*border: 1px solid #FFF;*/
+    color: #FFF;
+}
+
+.action-table {
+    margin-top: 10px;
+}
+
+.title p {
+    color: #233df9;
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.title-line {
+    width: 150px;
+    margin: 5px 0;
+    border-top: 4px solid #e6e6e6;
+}
+
+.modal-container {
+    padding: 20px;
+}
+
+.modal-title {
+    background-color: #233DF9;
+    padding: 8px 25px;
+}
+
+.modal-title p {
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.modal-line {
+    width: 120px;
+    margin: 5px 0;
+    border-top: 4px solid #ffffff55;
+}
+
+.info-btn button {
+    background-color: #FFF;
+    border: 1px solid #233DF9;
+    color: #233DF9;
+    transition: all .2s;
+}
+
+.info-btn button:hover {
+    background-color: #233DF9;
+    /*border: 1px solid #FFF;*/
+    color: #FFF;
+}
+
+.info-btn button:focus {
+    background-color: #233DF9;
+    /*border: 1px solid #FFF;*/
+    color: #FFF;
+}
+
+.info-btn button:active {
+    background-color: #233DF9 !important;
+    /*border: 1px solid #FFF;*/
+    color: #FFF;
+}
+
+
+
+.secondary-btn button {
+    background-color: #FFF;
+    border: 1px solid #111111;
+    color: #111111;
+    transition: all .2s;
+}
+
+.secondary-btn button:hover {
+    background-color: #111111;
+    /*border: 1px solid #FFF;*/
+    color: #FFF;
+}
+
+.secondary-btn button:focus {
+    background-color: #111111;
+    /*border: 1px solid #FFF;*/
+    color: #FFF;
+}
+
+.secondary-btn button:active {
+    background-color: #111111 !important;
+    /*border: 1px solid #FFF;*/
+    color: #FFF;
+}

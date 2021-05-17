@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "UserList",
   "name" : "UserList",
-  "lastUpdate" : 1621032135268,
+  "lastUpdate" : 1621262671730,
   "rows" : [
     [
       {
@@ -145,7 +145,7 @@
                       },
                       "label" : {
                         "type" : "constant",
-                        "value" : "Submit"
+                        "value" : "<i class=\"fas fa-plus\"></i> Submit"
                       },
                       "alignment" : {
                         "type" : "constant",
@@ -261,68 +261,6 @@
                     "reference" : "c1c2c9c9-943f-4bc0-a0d9-fd0bbd9a91dc",
                     "hasValidationError" : false,
                     "id" : "pbText"
-                  }
-                ],
-                [
-                  {
-                    "type" : "container",
-                    "dimension" : {
-                      "xs" : 12,
-                      "sm" : 12,
-                      "md" : 12,
-                      "lg" : 12
-                    },
-                    "propertyValues" : {
-                      "cssClasses" : {
-                        "type" : "constant",
-                        "value" : ""
-                      },
-                      "hidden" : {
-                        "type" : "constant",
-                        "value" : false
-                      },
-                      "repeatedCollection" : {
-                        "type" : "variable",
-                        "value" : ""
-                      }
-                    },
-                    "reference" : "b036890d-545d-4c7b-a75f-eb91751ff7ab",
-                    "hasValidationError" : false,
-                    "id" : "pbContainer",
-                    "rows" : [
-                      [
-                        {
-                          "type" : "component",
-                          "dimension" : {
-                            "xs" : 12,
-                            "sm" : 12,
-                            "md" : 2,
-                            "lg" : 12
-                          },
-                          "propertyValues" : {
-                            "cssClasses" : {
-                              "type" : "constant",
-                              "value" : ""
-                            },
-                            "hidden" : {
-                              "type" : "constant",
-                              "value" : false
-                            },
-                            "value" : {
-                              "type" : "expression",
-                              "value" : "config.show"
-                            },
-                            "label" : {
-                              "type" : "constant",
-                              "value" : "Configurar"
-                            }
-                          },
-                          "reference" : "da8a82be-efac-4201-a73d-cca0efb6c4af",
-                          "hasValidationError" : false,
-                          "id" : "customToggle"
-                        }
-                      ]
-                    ]
                   }
                 ],
                 [
@@ -1072,6 +1010,116 @@
                       "reference" : "62ba687b-d870-437f-942d-ae1b55ed3ea6",
                       "hasValidationError" : false,
                       "id" : "pbButton"
+                    }
+                  ]
+                ]
+              }
+            ]
+          ]
+        }
+      }
+    ],
+    [
+      {
+        "type" : "modalContainer",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "modalId" : {
+            "type" : "constant",
+            "value" : "editModal"
+          },
+          "size" : {
+            "type" : "constant",
+            "value" : "lg"
+          },
+          "animation" : {
+            "type" : "constant",
+            "value" : true
+          }
+        },
+        "reference" : "8037897f-5f7d-4e01-be66-8ffb666c34a4",
+        "hasValidationError" : false,
+        "id" : "pbModalContainer",
+        "container" : {
+          "type" : "container",
+          "dimension" : {
+            "xs" : 12
+          },
+          "propertyValues" : { },
+          "reference" : "57d057fb-5346-42a0-93eb-5f422f2d2c66",
+          "hasValidationError" : false,
+          "id" : "pbContainer",
+          "rows" : [
+            [
+              {
+                "type" : "container",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : "modal-container"
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "repeatedCollection" : {
+                    "type" : "variable",
+                    "value" : ""
+                  }
+                },
+                "reference" : "31328ca7-756c-493c-aded-790c52c2e6a2",
+                "hasValidationError" : false,
+                "id" : "pbContainer",
+                "rows" : [
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "Editar usuario"
+                        },
+                        "level" : {
+                          "type" : "constant",
+                          "value" : "Level 4"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        }
+                      },
+                      "reference" : "83e86623-2874-4e35-99b3-d27f1c54f023",
+                      "hasValidationError" : false,
+                      "id" : "pbTitle"
                     }
                   ]
                 ]
