@@ -1,0 +1,22 @@
+{
+  "modelVersion" : "2.0",
+  "id" : "customInitFunction",
+  "name" : "InitFunction",
+  "lastUpdate" : 1621291258216,
+  "template" : "@customInitFunction.tpl.html",
+  "controller" : "@customInitFunction.ctrl.js",
+  "custom" : true,
+  "properties" : [
+    {
+      "label" : "Callback",
+      "name" : "callback",
+      "help" : "",
+      "type" : "text",
+      "bond" : "variable"
+    }
+  ],
+  "assets" : [ ],
+  "requiredModules" : [ ],
+  "type" : "widget",
+  "hasHelp" : false
+}

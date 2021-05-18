@@ -1,8 +1,8 @@
 {
   "modelVersion" : "2.0",
-  "id" : "UserList",
-  "name" : "UserList",
-  "lastUpdate" : 1621262671730,
+  "id" : "Users",
+  "name" : "Users",
+  "lastUpdate" : 1621361181899,
   "rows" : [
     [
       {
@@ -99,28 +99,44 @@
                     "propertyValues" : {
                       "cssClasses" : {
                         "type" : "constant",
-                        "value" : ""
+                        "value" : "title"
                       },
                       "hidden" : {
                         "type" : "constant",
                         "value" : false
                       },
+                      "labelHidden" : {
+                        "type" : "constant",
+                        "value" : true
+                      },
+                      "label" : {
+                        "type" : "interpolation",
+                        "value" : "Default label"
+                      },
+                      "labelPosition" : {
+                        "type" : "constant",
+                        "value" : "top"
+                      },
+                      "labelWidth" : {
+                        "type" : "constant",
+                        "value" : 4
+                      },
+                      "allowHTML" : {
+                        "type" : "constant",
+                        "value" : true
+                      },
                       "text" : {
                         "type" : "interpolation",
-                        "value" : "Usuarios"
-                      },
-                      "level" : {
-                        "type" : "constant",
-                        "value" : "Level 1"
+                        "value" : "<i class=\"fas fa-building\"></i> \n Usuarios\n<hr class=\"title-line\" />"
                       },
                       "alignment" : {
                         "type" : "constant",
                         "value" : "left"
                       }
                     },
-                    "reference" : "7a47d517-1cdc-4cb7-941a-97145a5813ba",
+                    "reference" : "f4a561da-e2db-4b6a-b471-02d9c9a111f6",
                     "hasValidationError" : false,
-                    "id" : "pbTitle"
+                    "id" : "pbText"
                   },
                   {
                     "type" : "component",
@@ -145,7 +161,7 @@
                       },
                       "label" : {
                         "type" : "constant",
-                        "value" : "<i class=\"fas fa-plus\"></i> Submit"
+                        "value" : "<i class=\"fas fa-plus\"></i> Nuevo"
                       },
                       "alignment" : {
                         "type" : "constant",
@@ -209,6 +225,252 @@
                     "reference" : "d3264fe8-092e-4d62-9f66-f26524e6b306",
                     "hasValidationError" : false,
                     "id" : "pbButton"
+                  }
+                ],
+                [
+                  {
+                    "type" : "component",
+                    "dimension" : {
+                      "xs" : 12,
+                      "sm" : 12,
+                      "md" : 6,
+                      "lg" : 6
+                    },
+                    "propertyValues" : {
+                      "cssClasses" : {
+                        "type" : "constant",
+                        "value" : ""
+                      },
+                      "hidden" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "readOnly" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "required" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "labelHidden" : {
+                        "type" : "constant",
+                        "value" : true
+                      },
+                      "label" : {
+                        "type" : "interpolation",
+                        "value" : "Rol"
+                      },
+                      "labelPosition" : {
+                        "type" : "constant",
+                        "value" : "top"
+                      },
+                      "labelWidth" : {
+                        "type" : "constant",
+                        "value" : 4
+                      },
+                      "placeholder" : {
+                        "type" : "interpolation",
+                        "value" : "Selecciona un rol"
+                      },
+                      "availableValues" : {
+                        "type" : "expression",
+                        "value" : "roles"
+                      },
+                      "displayedKey" : {
+                        "type" : "constant",
+                        "value" : "displayName"
+                      },
+                      "returnedKey" : {
+                        "type" : "constant"
+                      },
+                      "value" : {
+                        "type" : "variable",
+                        "value" : "role"
+                      }
+                    },
+                    "reference" : "06b753b3-2bb2-4287-9713-3fb5e95bb018",
+                    "hasValidationError" : false,
+                    "id" : "pbAutocomplete"
+                  },
+                  {
+                    "type" : "component",
+                    "dimension" : {
+                      "xs" : 12,
+                      "sm" : 12,
+                      "md" : 6,
+                      "lg" : 6
+                    },
+                    "propertyValues" : {
+                      "cssClasses" : {
+                        "type" : "constant",
+                        "value" : ""
+                      },
+                      "hidden" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "readOnly" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "required" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "labelHidden" : {
+                        "type" : "constant",
+                        "value" : true
+                      },
+                      "label" : {
+                        "type" : "interpolation",
+                        "value" : "Grupo"
+                      },
+                      "labelPosition" : {
+                        "type" : "constant",
+                        "value" : "top"
+                      },
+                      "labelWidth" : {
+                        "type" : "constant",
+                        "value" : 4
+                      },
+                      "placeholder" : {
+                        "type" : "interpolation",
+                        "value" : "Selecciona un grupo"
+                      },
+                      "availableValues" : {
+                        "type" : "expression",
+                        "value" : "groups"
+                      },
+                      "displayedKey" : {
+                        "type" : "constant",
+                        "value" : "displayName"
+                      },
+                      "returnedKey" : {
+                        "type" : "constant"
+                      },
+                      "value" : {
+                        "type" : "variable",
+                        "value" : "group"
+                      }
+                    },
+                    "reference" : "b0f23188-e463-4ba2-9d43-3a4c50767fe5",
+                    "hasValidationError" : false,
+                    "id" : "pbAutocomplete"
+                  }
+                ],
+                [
+                  {
+                    "type" : "component",
+                    "dimension" : {
+                      "xs" : 12,
+                      "sm" : 12,
+                      "md" : 12,
+                      "lg" : 12
+                    },
+                    "propertyValues" : {
+                      "cssClasses" : {
+                        "type" : "constant",
+                        "value" : ""
+                      },
+                      "hidden" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "allowHTML" : {
+                        "type" : "constant",
+                        "value" : true
+                      },
+                      "headers" : {
+                        "type" : "constant",
+                        "value" : [
+                          "Rol",
+                          "Grupo"
+                        ]
+                      },
+                      "content" : {
+                        "type" : "expression",
+                        "value" : "memberships"
+                      },
+                      "columnsKey" : {
+                        "type" : "constant",
+                        "value" : [
+                          "role_id.displayName",
+                          "group_id.displayName"
+                        ]
+                      },
+                      "selectedRow" : {
+                        "type" : "variable",
+                        "value" : ""
+                      },
+                      "striped" : {
+                        "type" : "constant",
+                        "value" : true
+                      },
+                      "condensed" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "bordered" : {
+                        "type" : "constant",
+                        "value" : false
+                      }
+                    },
+                    "reference" : "f05ebf8d-32e1-411b-b2be-bdd034599b0f",
+                    "hasValidationError" : false,
+                    "id" : "pbTable"
+                  }
+                ],
+                [
+                  {
+                    "type" : "component",
+                    "dimension" : {
+                      "xs" : 12,
+                      "sm" : 12,
+                      "md" : 12,
+                      "lg" : 12
+                    },
+                    "propertyValues" : {
+                      "cssClasses" : {
+                        "type" : "constant",
+                        "value" : ""
+                      },
+                      "hidden" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "labelHidden" : {
+                        "type" : "constant",
+                        "value" : true
+                      },
+                      "label" : {
+                        "type" : "interpolation",
+                        "value" : "Default label"
+                      },
+                      "labelPosition" : {
+                        "type" : "constant",
+                        "value" : "top"
+                      },
+                      "labelWidth" : {
+                        "type" : "constant",
+                        "value" : 4
+                      },
+                      "allowHTML" : {
+                        "type" : "constant",
+                        "value" : true
+                      },
+                      "text" : {
+                        "type" : "interpolation",
+                        "value" : "<p ng-repeat=\"el in memberships\">XD</p>"
+                      },
+                      "alignment" : {
+                        "type" : "constant",
+                        "value" : "left"
+                      }
+                    },
+                    "reference" : "8a0ea1ad-5243-4582-b85a-ddf7b469cfd3",
+                    "hasValidationError" : false,
+                    "id" : "pbText"
                   }
                 ],
                 [
@@ -321,7 +583,7 @@
                       },
                       "selectedRow" : {
                         "type" : "variable",
-                        "value" : ""
+                        "value" : "user"
                       },
                       "pageSize" : {
                         "type" : "constant",
@@ -344,7 +606,7 @@
                       },
                       "selectedId" : {
                         "type" : "variable",
-                        "value" : "selectedId"
+                        "value" : ""
                       }
                     },
                     "reference" : "ab407521-1c75-4c81-864d-62741281b6e7",
@@ -392,7 +654,7 @@
                       },
                       "text" : {
                         "type" : "interpolation",
-                        "value" : "<b>DEBUG</b>\n<pre class=\"alert text-info\">\nSELECTED ID -> {{ selectedId }}\nUSER -> {{ user | json }}"
+                        "value" : "<b>DEBUG</b>\n<pre class=\"alert text-info\">\nROLE -> {{ role | json }}\nGROUP -> {{ group | json }}"
                       },
                       "alignment" : {
                         "type" : "constant",
@@ -400,6 +662,58 @@
                       }
                     },
                     "reference" : "b95828b5-afaa-422c-a07c-b1624715a6c0",
+                    "hasValidationError" : false,
+                    "id" : "pbText"
+                  }
+                ],
+                [
+                  {
+                    "type" : "component",
+                    "dimension" : {
+                      "xs" : 12,
+                      "sm" : 12,
+                      "md" : 12,
+                      "lg" : 12
+                    },
+                    "propertyValues" : {
+                      "cssClasses" : {
+                        "type" : "constant",
+                        "value" : ""
+                      },
+                      "hidden" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "labelHidden" : {
+                        "type" : "constant",
+                        "value" : true
+                      },
+                      "label" : {
+                        "type" : "constant",
+                        "value" : "Default label"
+                      },
+                      "labelPosition" : {
+                        "type" : "constant",
+                        "value" : "top"
+                      },
+                      "labelWidth" : {
+                        "type" : "constant",
+                        "value" : 4
+                      },
+                      "allowHTML" : {
+                        "type" : "constant",
+                        "value" : true
+                      },
+                      "text" : {
+                        "type" : "interpolation",
+                        "value" : "<small>\nv1.0"
+                      },
+                      "alignment" : {
+                        "type" : "constant",
+                        "value" : "right"
+                      }
+                    },
+                    "reference" : "ffdbdf5a-7c13-4f5a-b5b4-428204edc60a",
                     "hasValidationError" : false,
                     "id" : "pbText"
                   }
@@ -441,7 +755,7 @@
     ],
     [
       {
-        "type" : "component",
+        "type" : "modalContainer",
         "dimension" : {
           "xs" : 12,
           "sm" : 12,
@@ -453,42 +767,64 @@
             "type" : "constant",
             "value" : ""
           },
-          "hidden" : {
-            "type" : "constant",
-            "value" : false
+          "modalId" : {
+            "type" : "constant"
           },
-          "labelHidden" : {
+          "size" : {
             "type" : "constant",
-            "value" : true
+            "value" : ""
           },
-          "label" : {
-            "type" : "constant",
-            "value" : "Default label"
-          },
-          "labelPosition" : {
-            "type" : "constant",
-            "value" : "top"
-          },
-          "labelWidth" : {
-            "type" : "constant",
-            "value" : 4
-          },
-          "allowHTML" : {
+          "animation" : {
             "type" : "constant",
             "value" : true
-          },
-          "text" : {
-            "type" : "interpolation",
-            "value" : "<small>\nv1.0"
-          },
-          "alignment" : {
-            "type" : "constant",
-            "value" : "right"
           }
         },
-        "reference" : "ffdbdf5a-7c13-4f5a-b5b4-428204edc60a",
+        "reference" : "af50e212-0036-4bf0-9309-5d1a48a22a66",
         "hasValidationError" : false,
-        "id" : "pbText"
+        "id" : "pbModalContainer",
+        "container" : {
+          "type" : "container",
+          "dimension" : {
+            "xs" : 12
+          },
+          "propertyValues" : { },
+          "reference" : "69c02258-519c-4ba0-9c6a-48810242534a",
+          "hasValidationError" : false,
+          "id" : "pbContainer",
+          "rows" : [
+            [
+              {
+                "type" : "container",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : "modal-container"
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "repeatedCollection" : {
+                    "type" : "variable",
+                    "value" : ""
+                  }
+                },
+                "reference" : "a6245332-d88f-4d9f-ae27-42cf3be5d12f",
+                "hasValidationError" : false,
+                "id" : "pbContainer",
+                "rows" : [
+                  [ ]
+                ]
+              }
+            ]
+          ]
+        }
       }
     ],
     [
@@ -1255,10 +1591,40 @@
         "}"
       ],
       "exposed" : false
+    },
+    "roles" : {
+      "type" : "url",
+      "value" : [
+        "../API/identity/role?c=500&o=displayName+asc&p=0"
+      ],
+      "exposed" : false
+    },
+    "role" : {
+      "type" : "constant",
+      "exposed" : false
+    },
+    "group" : {
+      "type" : "constant",
+      "exposed" : false
+    },
+    "groups" : {
+      "type" : "url",
+      "value" : [
+        "../API/identity/group?c=500&o=displayName+asc&p=0"
+      ],
+      "exposed" : false
+    },
+    "memberships" : {
+      "type" : "url",
+      "value" : [
+        "../API/identity/membership?c=25&d=role_id&d=group_id&f=user_id={{user.id}}&p=0"
+      ],
+      "exposed" : false
     }
   },
   "hasValidationError" : false,
   "uuid" : "48d88b1e-1447-463a-a542-b7e574095f1e",
   "type" : "page",
-  "description" : "Page generated with Bonita UI designer"
+  "description" : "Page generated with Bonita UI designer",
+  "displayName" : "Users page"
 }

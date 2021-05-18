@@ -2,8 +2,36 @@
   "modelVersion" : "2.0",
   "id" : "Companies",
   "name" : "Companies",
-  "lastUpdate" : 1621287296438,
+  "lastUpdate" : 1621360131404,
   "rows" : [
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "callback" : {
+            "type" : "variable",
+            "value" : "axios.getCompanies"
+          }
+        },
+        "reference" : "f6cba6dd-16d0-4dc3-883f-b02dd266bcd1",
+        "hasValidationError" : false,
+        "id" : "customInitFunction"
+      }
+    ],
     [
       {
         "type" : "container",
@@ -361,7 +389,7 @@
                         "value" : "left"
                       }
                     },
-                    "reference" : "35cbd47b-d10c-45be-8655-fa5a4e076445",
+                    "reference" : "84d20190-8898-464e-bd4f-b9c871a33a44",
                     "hasValidationError" : false,
                     "id" : "pbText"
                   }
@@ -382,7 +410,7 @@
                       },
                       "hidden" : {
                         "type" : "constant",
-                        "value" : false
+                        "value" : true
                       },
                       "labelHidden" : {
                         "type" : "constant",
@@ -413,7 +441,7 @@
                         "value" : "left"
                       }
                     },
-                    "reference" : "f740755c-1c80-41c3-a017-84e40ffad743",
+                    "reference" : "caa5c38e-f43b-4991-bd8a-252a54b94d60",
                     "hasValidationError" : false,
                     "id" : "pbText"
                   }
@@ -434,7 +462,7 @@
                       },
                       "hidden" : {
                         "type" : "constant",
-                        "value" : false
+                        "value" : true
                       },
                       "allowHTML" : {
                         "type" : "constant",
@@ -1177,7 +1205,7 @@
     "groups" : {
       "type" : "url",
       "value" : [
-        "../API/identity/group?p=0&c=1000&o=displayName%20ASC"
+        "../API/identity/group?p=0&c={{groupLimit}}&o=displayName%20ASC"
       ],
       "exposed" : false
     },
@@ -1259,6 +1287,7 @@
         "    ",
         "    await $http(req)",
         "    .success(function (data, status) {",
+        "        $data.groupLimit = 1001;",
         "        console.log('$HTTP COMPANY -> ',{ message: \"success\", status: status, dataFromSuccess: data, dataFromError: undefined, responseStatusCode: status });",
         "    })",
         "    .error(function (data, status) {",
@@ -1307,6 +1336,13 @@
         "    \"id\": null,",
         "    \"name\": null",
         "}"
+      ],
+      "exposed" : false
+    },
+    "groupLimit" : {
+      "type" : "constant",
+      "value" : [
+        "1000"
       ],
       "exposed" : false
     }
