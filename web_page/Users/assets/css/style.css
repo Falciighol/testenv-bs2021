@@ -46,31 +46,6 @@ input[type='number'].ng-invalid.ng-dirty, input[type='password'].ng-invalid.ng-d
     margin-top: 25px;
 }
 
-.addButton button {
-    background-color: #FFF;
-    border: 1px solid #233DF9;
-    color: #233DF9;
-    transition: all .5s;
-}
-
-.addButton button:hover {
-    background-color: #233DF9;
-    /*border: 1px solid #FFF;*/
-    color: #FFF;
-}
-
-.addButton button:focus {
-    background-color: #233DF9;
-    /*border: 1px solid #FFF;*/
-    color: #FFF;
-}
-
-.addButton button:active {
-    background-color: #233DF9 !important;
-    /*border: 1px solid #FFF;*/
-    color: #FFF;
-}
-
 .action-table {
     margin-top: 10px;
 }
@@ -94,12 +69,12 @@ input[type='number'].ng-invalid.ng-dirty, input[type='password'].ng-invalid.ng-d
 
 .modal-title {
     background-color: #233DF9;
-    padding: 8px 25px;
+    padding: 15px 25px;
 }
 
 .modal-title p {
     color: #fff;
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     font-weight: bold;
     margin: 0;
 }
@@ -160,4 +135,81 @@ input[type='number'].ng-invalid.ng-dirty, input[type='password'].ng-invalid.ng-d
     background-color: #111111 !important;
     /*border: 1px solid #FFF;*/
     color: #FFF;
+}
+
+.primary-btn button {
+    background-color: #FFF;
+    border: 1px solid #233DF9;
+    color: #233DF9;
+    transition: all .2s;
+}
+
+.primary-btn button:hover {
+    background-color: #233DF9;
+    /*border: 1px solid #FFF;*/
+    color: #FFF;
+}
+
+.primary-btn button:focus {
+    background-color: #233DF9;
+    /*border: 1px solid #FFF;*/
+    color: #FFF;
+}
+
+.primary-btn button:active {
+    background-color: #233DF9 !important;
+    /*border: 1px solid #FFF;*/
+    color: #FFF;
+}
+
+.danger-btn button {
+    background-color: #FFF;
+    border: 1px solid #FA3C23;
+    color: #FA3C23;
+    transition: all .2s;
+}
+
+.danger-btn button:hover {
+    background-color: #FA3C23;
+    /*border: 1px solid #FFF;*/
+    color: #FFF;
+}
+
+.danger-btn button:focus {
+    background-color: #FA3C23;
+    /*border: 1px solid #FFF;*/
+    color: #FFF;
+}
+
+.danger-btn button:active {
+    background-color: #FA3C23 !important;
+    /*border: 1px solid #FFF;*/
+    color: #FFF;
+}
+
+.pagination>li>a, .pagination>li>span {
+    color: #111111;
+    transition: all .2s;
+}
+
+.paginaton>li>a, .pagination>li>span:hover {
+    color: #444444;
+}
+
+.pagination>.active>a {
+    background-color: #111111;
+    border-color: #111111;
+    color: #FFF;
+    transition: all .2s;
+}
+
+.pagination>.active>a:hover {
+    background-color: #333333;
+    border-color: #333333;
+}
+
+.table>tbody>tr>td {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
 }

@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "Companies",
   "name" : "Companies",
-  "lastUpdate" : 1621360131404,
+  "lastUpdate" : 1621445276895,
   "rows" : [
     [
       {
@@ -65,7 +65,7 @@
               "dimension" : {
                 "xs" : 12,
                 "sm" : 12,
-                "md" : 2,
+                "md" : 1,
                 "lg" : 1
               },
               "propertyValues" : {
@@ -94,7 +94,7 @@
               "dimension" : {
                 "xs" : 12,
                 "sm" : 12,
-                "md" : 8,
+                "md" : 10,
                 "lg" : 10
               },
               "propertyValues" : {
@@ -594,7 +594,7 @@
               "dimension" : {
                 "xs" : 12,
                 "sm" : 12,
-                "md" : 2,
+                "md" : 1,
                 "lg" : 1
               },
               "propertyValues" : {
@@ -1158,6 +1158,13 @@
   ],
   "assets" : [
     {
+      "id" : "f2eab7d2-c5dd-4bff-b6db-4564fc450756",
+      "name" : "axios.min.js",
+      "type" : "js",
+      "order" : 4,
+      "external" : false
+    },
+    {
       "id" : "916b685e-3bb1-40e7-8eb7-052ecc806ac8",
       "name" : "style.css",
       "type" : "css",
@@ -1183,13 +1190,6 @@
       "name" : "all.js",
       "type" : "js",
       "order" : 2,
-      "external" : false
-    },
-    {
-      "id" : "f2eab7d2-c5dd-4bff-b6db-4564fc450756",
-      "name" : "axios.min.js",
-      "type" : "js",
-      "order" : 4,
       "external" : false
     },
     {
