@@ -2,7 +2,7 @@
   "modelVersion" : "2.0",
   "id" : "Users",
   "name" : "Users",
-  "lastUpdate" : 1621616891185,
+  "lastUpdate" : 1621637344123,
   "rows" : [
     [
       {
@@ -283,71 +283,9 @@
                   {
                     "type" : "component",
                     "dimension" : {
-                      "xs" : 6,
+                      "xs" : 12,
                       "sm" : 6,
-                      "md" : 6,
-                      "lg" : 2
-                    },
-                    "propertyValues" : {
-                      "cssClasses" : {
-                        "type" : "constant",
-                        "value" : ""
-                      },
-                      "hidden" : {
-                        "type" : "constant",
-                        "value" : true
-                      },
-                      "disabled" : {
-                        "type" : "constant",
-                        "value" : false
-                      },
-                      "required" : {
-                        "type" : "constant",
-                        "value" : false
-                      },
-                      "labelHidden" : {
-                        "type" : "constant",
-                        "value" : false
-                      },
-                      "label" : {
-                        "type" : "interpolation",
-                        "value" : "Filtrar por"
-                      },
-                      "labelPosition" : {
-                        "type" : "constant",
-                        "value" : "top"
-                      },
-                      "labelWidth" : {
-                        "type" : "constant",
-                        "value" : 4
-                      },
-                      "placeholder" : {
-                        "type" : "interpolation"
-                      },
-                      "availableValues" : {
-                        "type" : "constant"
-                      },
-                      "displayedKey" : {
-                        "type" : "constant"
-                      },
-                      "returnedKey" : {
-                        "type" : "constant"
-                      },
-                      "value" : {
-                        "type" : "variable",
-                        "value" : ""
-                      }
-                    },
-                    "reference" : "01db0e85-db79-4d22-b687-dba4bbf1522e",
-                    "hasValidationError" : false,
-                    "id" : "pbSelect"
-                  },
-                  {
-                    "type" : "component",
-                    "dimension" : {
-                      "xs" : 6,
-                      "sm" : 6,
-                      "md" : 6,
+                      "md" : 5,
                       "lg" : 4
                     },
                     "propertyValues" : {
@@ -357,7 +295,7 @@
                       },
                       "hidden" : {
                         "type" : "constant",
-                        "value" : true
+                        "value" : false
                       },
                       "required" : {
                         "type" : "constant",
@@ -381,11 +319,11 @@
                       },
                       "label" : {
                         "type" : "interpolation",
-                        "value" : "Default label"
+                        "value" : "Buscar"
                       },
                       "labelPosition" : {
                         "type" : "constant",
-                        "value" : "top"
+                        "value" : "left"
                       },
                       "labelWidth" : {
                         "type" : "constant",
@@ -396,7 +334,7 @@
                       },
                       "value" : {
                         "type" : "variable",
-                        "value" : ""
+                        "value" : "search"
                       },
                       "type" : {
                         "type" : "constant",
@@ -497,6 +435,54 @@
                     "hasValidationError" : false,
                     "id" : "pbContainer",
                     "rows" : [
+                      [
+                        {
+                          "type" : "component",
+                          "dimension" : {
+                            "xs" : 12,
+                            "sm" : 12,
+                            "md" : 12,
+                            "lg" : 12
+                          },
+                          "propertyValues" : {
+                            "cssClasses" : {
+                              "type" : "constant",
+                              "value" : ""
+                            },
+                            "hidden" : {
+                              "type" : "constant",
+                              "value" : false
+                            },
+                            "disabled" : {
+                              "type" : "constant",
+                              "value" : false
+                            },
+                            "label" : {
+                              "type" : "interpolation",
+                              "value" : "<i class=\"fas fa-sync-alt\"></i>"
+                            },
+                            "alignment" : {
+                              "type" : "constant",
+                              "value" : "left"
+                            },
+                            "buttonStyle" : {
+                              "type" : "constant",
+                              "value" : "default"
+                            },
+                            "javascript" : {
+                              "type" : "variable",
+                              "value" : "axios.reloadUsers"
+                            },
+                            "closeModalOnSuccess" : {
+                              "type" : "constant",
+                              "value" : false
+                            }
+                          },
+                          "reference" : "ebb0a25b-cbde-421f-8c5a-4113a4b942f6",
+                          "hasValidationError" : false,
+                          "id" : "customJavascriptButton"
+                        }
+                      ],
                       [
                         {
                           "type" : "component",
@@ -725,7 +711,7 @@
                                     "value" : false
                                   }
                                 },
-                                "reference" : "cc75f6aa-483d-49c3-a889-abbf2def6a5a",
+                                "reference" : "0811f07a-f5e1-434e-9742-a61eb7b7d71d",
                                 "hasValidationError" : false,
                                 "id" : "customJavascriptButton"
                               }
@@ -773,7 +759,7 @@
                                     "value" : false
                                   }
                                 },
-                                "reference" : "8d166ada-9a1c-451c-9209-3346b888b7f8",
+                                "reference" : "285fc7c3-44a5-4926-9fef-f80f061ad3c2",
                                 "hasValidationError" : false,
                                 "id" : "customJavascriptButton"
                               }
@@ -4964,7 +4950,7 @@
                           "value" : true
                         }
                       },
-                      "reference" : "60aed871-a193-4fac-8cb6-3f4bd1f41c19",
+                      "reference" : "d3d2699b-5056-4cee-b850-2ff23547ae7e",
                       "hasValidationError" : false,
                       "id" : "customJavascriptButton"
                     },
@@ -5178,7 +5164,7 @@
                           "value" : "left"
                         }
                       },
-                      "reference" : "b2e5006f-398b-4379-8a2c-7a3d1371fbc8",
+                      "reference" : "00532e8d-6db3-4cfd-943c-1cc8fd8df05e",
                       "hasValidationError" : false,
                       "id" : "pbText"
                     }
@@ -5232,7 +5218,7 @@
                           "value" : false
                         }
                       },
-                      "reference" : "9968ec38-5306-4640-8fdd-c097195ced6e",
+                      "reference" : "fd413c9e-7526-4fb5-ba4c-c170a477ca6c",
                       "hasValidationError" : false,
                       "id" : "pbFormContainer",
                       "container" : {
@@ -5241,7 +5227,7 @@
                           "xs" : 12
                         },
                         "propertyValues" : { },
-                        "reference" : "7d65a2f6-979b-41ce-9854-9702698d592e",
+                        "reference" : "addfbaef-df29-466e-916d-b05cfb8df67a",
                         "hasValidationError" : false,
                         "id" : "pbContainer",
                         "rows" : [
@@ -5317,7 +5303,7 @@
                                   "value" : 1
                                 }
                               },
-                              "reference" : "139a7605-10e2-4b39-8a86-a9bcb8a24c13",
+                              "reference" : "5ab5ae7a-ff88-4c02-b17c-da3d75638909",
                               "hasValidationError" : false,
                               "id" : "pbInput"
                             }
@@ -5394,7 +5380,7 @@
                                   "value" : 1
                                 }
                               },
-                              "reference" : "5d2d9a27-6c69-4721-9c43-938714f2cf7d",
+                              "reference" : "6a185c41-646c-4c03-aa63-3e98a26f7cc7",
                               "hasValidationError" : false,
                               "id" : "pbInput"
                             },
@@ -5469,7 +5455,7 @@
                                   "value" : 1
                                 }
                               },
-                              "reference" : "621aa7d5-cc8e-4921-8524-b73687f3a73a",
+                              "reference" : "a8dff509-dd53-4601-9a8f-6ba622a6abeb",
                               "hasValidationError" : false,
                               "id" : "pbInput"
                             }
@@ -5546,7 +5532,7 @@
                                   "value" : 1
                                 }
                               },
-                              "reference" : "89518a89-3605-41ed-8982-f7fe2df436fc",
+                              "reference" : "ab31d2cb-77d7-4747-8d69-3cb6099c6417",
                               "hasValidationError" : false,
                               "id" : "pbInput"
                             },
@@ -5621,7 +5607,7 @@
                                   "value" : 1
                                 }
                               },
-                              "reference" : "77e2bd95-1d2d-41d2-99bd-3e5b142b8d59",
+                              "reference" : "a684fe08-f872-44b6-92e2-9d55fe397313",
                               "hasValidationError" : false,
                               "id" : "pbInput"
                             }
@@ -5673,7 +5659,7 @@
                                   "value" : "left"
                                 }
                               },
-                              "reference" : "325d98ab-f9f6-4d03-9e51-00ea138d190b",
+                              "reference" : "173a8e20-84f1-4edf-b4cf-7262af5f3345",
                               "hasValidationError" : false,
                               "id" : "pbText"
                             }
@@ -5721,7 +5707,7 @@
                                   "value" : true
                                 }
                               },
-                              "reference" : "9b269ae6-c396-430e-a9d8-12b5a03b7840",
+                              "reference" : "20c857d5-4ce2-4d86-8138-2672eb40d952",
                               "hasValidationError" : false,
                               "id" : "customJavascriptButton"
                             },
@@ -5809,7 +5795,7 @@
                                   "type" : "variable"
                                 }
                               },
-                              "reference" : "05bb6f29-648d-456b-a181-8d36a269753b",
+                              "reference" : "3388255f-60e7-42cc-9411-255220d0f60b",
                               "hasValidationError" : false,
                               "id" : "pbButton"
                             }
@@ -6855,8 +6841,12 @@
         "    }",
         "}",
         "",
-        "funcs.findByKey = () => {",
-        "    ",
+        "funcs.search = () => {",
+        "    if ($data.search && $data.search !== \"\" && $data.search !== null) {",
+        "        $data.users = $data.users.filter((e) => {",
+        "            return e.firstname.includes($data.search) || e.lastname.includes($data.search)",
+        "        })",
+        "    }",
         "}",
         "",
         "return funcs;"
@@ -6929,13 +6919,18 @@
         "const notifier = new AWN({\r",
         "    labels: {\r",
         "        success: \"Realizado\",\r",
-        "        warning: \"Error\"\r",
+        "        alert: \"Error\",\r",
+        "        warning: \"Atención\",\r",
+        "        info: \"Información\"\r",
         "    },\r",
         "    durations: {\r",
         "        success: 2500, \r",
-        "        warning: 2500\r",
+        "        alert: 2500, \r",
+        "        warning: 2500, \r",
+        "        info: 2500\r",
         "    },\r",
-        "    position: \"top-right\"\r",
+        "    position: \"top-right\",\r",
+        "    maxNotifications: 3\r",
         "});\r",
         "\r",
         "const getMemberships = async ($http) => {\r",
@@ -6944,12 +6939,12 @@
         "        url: '../API/identity/membership?c=100&d=role_id&d=group_id&f=user_id=' + $data.user.id + '&p=0',\r",
         "    };\r",
         "    \r",
-        "    $http(req)\r",
+        "    await $http(req)\r",
         "    .success(function (data, status) {\r",
         "        $data.memberships = data;\r",
         "    })\r",
         "    .error(function (data, status) {\r",
-        "        notifier.warning('¡Ocurrió un error!<br>' + data.message)\r",
+        "        notifier.alert('<b>¡Algo salió mal!</b><br>' + data.message + '</i>')\r",
         "    })\r",
         "    .finally(function () {\r",
         "        \r",
@@ -6962,12 +6957,12 @@
         "        url: '../API/identity/user?d=professional_data&d=personnal_data&d=manager_i&p=0&c=500&&o=lastname%20ASC',\r",
         "    };\r",
         "    \r",
-        "    $http(req)\r",
+        "    await $http(req)\r",
         "    .success(function (data, status) {\r",
         "        $data.users = data;\r",
         "    })\r",
         "    .error(function (data, status) {\r",
-        "        notifier.warning('¡Ocurrió un error!<br>' + data.message)\r",
+        "        notifier.alert('<b>¡Algo salió mal!</b><br>' + data.message + '</i>')\r",
         "    })\r",
         "    .finally(function () {\r",
         "        \r",
@@ -6989,7 +6984,7 @@
         "        }\r",
         "    })\r",
         "    .error(function (data, status) {\r",
-        "        notifier.warning('¡Ocurrió un error! -> ' + data.message)\r",
+        "        notifier.alert('<b>¡Algo salió mal!</b><br/><i>' + data.message + '</i>')\r",
         "    })\r",
         "    .finally(function () {\r",
         "        $data.role = {};\r",
@@ -7015,7 +7010,7 @@
         "        }\r",
         "    })\r",
         "    .error(function (data, status) {\r",
-        "        notifier.warning('¡Ocurrió un error! -> ' + data.message);\r",
+        "        notifier.alert('<b>¡Algo salió mal!</b><br/><i>' + data.message + '</i>');\r",
         "    })\r",
         "    .finally(function () {\r",
         "        // Do something\r",
@@ -7042,7 +7037,7 @@
         "        }\r",
         "    })\r",
         "    .error(function (data, status) {\r",
-        "        notifier.warning('¡Ocurrió un error! -> ' + data.message);\r",
+        "        notifier.alert('<b>¡Algo salió mal!</b><br/><i>' + data.message + '</i>');\r",
         "    })\r",
         "    .finally(function () {\r",
         "        // Do something\r",
@@ -7068,7 +7063,7 @@
         "        if (status == 200) notifier.success('¡Se actualizó el usuario!');\r",
         "    })\r",
         "    .error(function (data, status) {\r",
-        "        notifier.warning('¡Ocurrió un error! -> ' + data.message);\r",
+        "        notifier.alert('<b>¡Algo salió mal!</b><br/><i>' + data.message + '</i>');\r",
         "    })\r",
         "    .finally(function () {\r",
         "        // Do something\r",
@@ -7080,18 +7075,18 @@
         "        method: 'PUT',\r",
         "        url: \"../API/identity/professionalcontactdata/\" + $data.user.id,\r",
         "        data: {\r",
-        "            \"country\": $data.user.professional_data.country,\r",
-        "            \"website\": $data.user.professional_data.website,\r",
-        "            \"address\": $data.user.professional_data.address,\r",
-        "            \"city\": $data.user.professional_data.city,\r",
-        "            \"fax_number\": $data.user.professional_data.fax_number,\r",
-        "            \"building\": $data.user.professional_data.building,\r",
-        "            \"room\": $data.user.professional_data.room,\r",
-        "            \"zipcode\": $data.user.professional_data.zipcode,\r",
-        "            \"phone_number\": $data.user.professional_data.phone_number,\r",
-        "            \"state\": $data.user.professional_data.state,\r",
-        "            \"mobile_number\": $data.user.professional_data.mobile_number,\r",
-        "            \"email\": $data.user.professional_data.email\r",
+        "            \"country\": ($data.user.professional_data.country) ? $data.user.professional_data.country : \"\",\r",
+        "            \"website\": ($data.user.professional_data.website) ? $data.user.professional_data.website : \"\",\r",
+        "            \"address\": ($data.user.professional_data.address) ? $data.user.professional_data.address : \"\",\r",
+        "            \"city\": ($data.user.professional_data.city) ? $data.user.professional_data.city : \"\",\r",
+        "            \"fax_number\": ($data.user.professional_data.fax_number) ? $data.user.professional_data.fax_number : \"\",\r",
+        "            \"building\": ($data.user.professional_data.building) ? $data.user.professional_data.building : \"\",\r",
+        "            \"room\": ($data.user.professional_data.room) ? $data.user.professional_data.room : \"\",\r",
+        "            \"zipcode\": ($data.user.professional_data.zipcode) ? $data.user.professional_data.zipcode : \"\",\r",
+        "            \"phone_number\": ($data.user.professional_data.phone_number) ? $data.user.professional_data.phone_number : \"\",\r",
+        "            \"state\": ($data.user.professional_data.state) ? $data.user.professional_data.state : \"\",\r",
+        "            \"mobile_number\": ($data.user.professional_data.mobile_number) ? $data.user.professional_data.mobile_number : \"\",\r",
+        "            \"email\": ($data.user.professional_data.email) ? $data.user.professional_data.email : \"\"\r",
         "        }\r",
         "    };\r",
         "    \r",
@@ -7100,7 +7095,7 @@
         "        if (status == 200) notifier.success('¡Se actualizó el usuario!');\r",
         "    })\r",
         "    .error(function (data, status) {\r",
-        "        notifier.warning('¡Ocurrió un error! -> ' + data.message);\r",
+        "        notifier.alert('<b>¡Algo salió mal!</b><br/><i>' + data.message + '</i>');\r",
         "    })\r",
         "    .finally(function () {\r",
         "        // Do something\r",
@@ -7112,18 +7107,18 @@
         "        method: 'PUT',\r",
         "        url: \"../API/identity/personalcontactdata/\" + $data.user.id,\r",
         "        data: {\r",
-        "            \"country\": $data.user.personnal_data.country,\r",
-        "            \"website\": $data.user.personnal_data.website,\r",
-        "            \"address\": $data.user.personnal_data.address,\r",
-        "            \"city\": $data.user.personnal_data.city,\r",
-        "            \"fax_number\": $data.user.personnal_data.fax_number,\r",
-        "            \"building\": $data.user.personnal_data.building,\r",
-        "            \"room\": $data.user.personnal_data.room,\r",
-        "            \"zipcode\": $data.user.personnal_data.zipcode,\r",
-        "            \"phone_number\": $data.user.personnal_data.phone_number,\r",
-        "            \"state\": $data.user.personnal_data.state,\r",
-        "            \"mobile_number\": $data.user.personnal_data.mobile_number,\r",
-        "            \"email\": $data.user.personnal_data.email\r",
+        "            \"country\": ($data.user.personnal_data.country) ? $data.user.personnal_data.country : \"\",\r",
+        "            \"website\": ($data.user.personnal_data.website) ? $data.user.personnal_data.website : \"\",\r",
+        "            \"address\": ($data.user.personnal_data.address) ? $data.user.personnal_data.address : \"\",\r",
+        "            \"city\": ($data.user.personnal_data.city) ? $data.user.personnal_data.city : \"\",\r",
+        "            \"fax_number\": ($data.user.personnal_data.fax_number) ? $data.user.personnal_data.fax_number : \"\",\r",
+        "            \"building\": ($data.user.personnal_data.building) ? $data.user.personnal_data.building : \"\",\r",
+        "            \"room\": ($data.user.personnal_data.room) ? $data.user.personnal_data.room : \"\",\r",
+        "            \"zipcode\": ($data.user.personnal_data.zipcode) ? $data.user.personnal_data.zipcode : \"\",\r",
+        "            \"phone_number\": ($data.user.personnal_data.phone_number) ? $data.user.personnal_data.phone_number : \"\",\r",
+        "            \"state\": ($data.user.personnal_data.state) ? $data.user.personnal_data.state : \"\",\r",
+        "            \"mobile_number\": ($data.user.personnal_data.mobile_number) ? $data.user.personnal_data.mobile_number : \"\",\r",
+        "            \"email\": ($data.user.personnal_data.email) ? $data.user.personnal_data.email : \"\"\r",
         "        }\r",
         "    };\r",
         "    \r",
@@ -7132,7 +7127,7 @@
         "        if (status == 200) notifier.success('¡Se actualizó el usuario!');\r",
         "    })\r",
         "    .error(function (data, status) {\r",
-        "        notifier.warning('¡Ocurrió un error! -> ' + data.message);\r",
+        "        notifier.alert('<b>¡Algo salió mal!</b><br/><i>' + data.message + '</i>');\r",
         "    })\r",
         "    .finally(function () {\r",
         "        // Do something\r",
@@ -7148,11 +7143,50 @@
         "    \r",
         "    await $http(req)\r",
         "    .success(function (data, status) {\r",
-        "        if (status == 200) notifier.success('¡Se agregó el usuario!')\r",
-        "        getUsers($http);\r",
+        "        if (status == 200) {\r",
+        "            notifier.success('¡Se agregó el usuario!')\r",
+        "            $data.users.push({\r",
+        "                ...data,\r",
+        "                \"personnal_data\": {\r",
+        "                    \"country\": \"\",\r",
+        "                    \"website\": \"\",\r",
+        "                    \"address\": \"\",\r",
+        "                    \"city\": \"\",\r",
+        "                    \"fax_number\": \"\",\r",
+        "                    \"building\": \"\",\r",
+        "                    \"room\": \"\",\r",
+        "                    \"zipcode\": \"\",\r",
+        "                    \"phone_number\": \"\",\r",
+        "                    \"state\": \"\",\r",
+        "                    \"id\": \"\",\r",
+        "                    \"mobile_number\": \"\",\r",
+        "                    \"email\": \"\"\r",
+        "                },\r",
+        "                \"professional_data\": {\r",
+        "                    \"country\": \"\",\r",
+        "                    \"website\": \"\",\r",
+        "                    \"address\": \"\",\r",
+        "                    \"city\": \"\",\r",
+        "                    \"fax_number\": \"\",\r",
+        "                    \"building\": \"\",\r",
+        "                    \"room\": \"\",\r",
+        "                    \"zipcode\": \"\",\r",
+        "                    \"phone_number\": \"\",\r",
+        "                    \"state\": \"\",\r",
+        "                    \"id\": \"\",\r",
+        "                    \"mobile_number\": \"\",\r",
+        "                    \"email\": \"\"\r",
+        "                }\r",
+        "            })\r",
+        "            getUsers($http);\r",
+        "            $data.users.map((el, i) => {\r",
+        "                if (el.id == data.id)\r",
+        "                    $data.user = el;\r",
+        "            })\r",
+        "        }\r",
         "    })\r",
         "    .error(function (data, status) {\r",
-        "        notifier.warning('¡Ocurrió un error! -> ' + data.message)\r",
+        "        notifier.alert('<b>¡Algo salió mal!</b><br/><i>' + data.message + '</i>')\r",
         "    })\r",
         "    .finally(function () {\r",
         "        $data.userBody = {\r",
@@ -7178,15 +7212,20 @@
         "    \r",
         "    await $http(req)\r",
         "    .success(function (data, status) {\r",
-        "        if (status == 200) notifier.success('¡Se eliminó el usuario!');\r",
-        "        getUsers($http);\r",
-        "        $data.user = ($data.users) ? $data.users[0] : {}\r",
+        "        if (status == 200) {\r",
+        "            notifier.success('¡Se eliminó el usuario!');\r",
+        "            $data.users.map((el, i) => {\r",
+        "                if (el.id == $data.user.id) $data.users.splice(i, 1)\r",
+        "            })\r",
+        "            getUsers($http);\r",
+        "            $data.user = $data.users[0];\r",
+        "        }\r",
         "    })\r",
         "    .error(function (data, status) {\r",
-        "        notifier.warning('¡Ocurrió un error! -> ' + data.message);\r",
+        "        notifier.alert('<b>¡Algo salió mal!</b><br/><i>' + data.message + '</i>');\r",
         "    })\r",
         "    .finally(function () {\r",
-        "        // Do something\r",
+        "        \r",
         "    });\r",
         "        \r",
         "};\r",
@@ -7196,19 +7235,19 @@
         "        method: 'PUT',\r",
         "        url: \"../API/identity/user/\" + $data.user.id,\r",
         "        data: {\r",
-        "            \"enable\": \"true\"\r",
+        "            \"enabled\": \"true\"\r",
         "        }\r",
         "    };\r",
         "    \r",
         "    await $http(req)\r",
         "    .success(function (data, status) {\r",
         "        if (status == 200) {\r",
-        "            notifier.success('¡Usuario activado!');\r",
+        "            notifier.info('¡Usuario activado!');\r",
         "            $data.user.enabled = \"true\";\r",
         "        }\r",
         "    })\r",
         "    .error(function (data, status) {\r",
-        "        notifier.warning('¡Ocurrió un error! -> ' + data.message);\r",
+        "        notifier.alert('<b>¡Algo salió mal!</b> <br/><i> ' + data.message + '</i>');\r",
         "    })\r",
         "    .finally(function () {\r",
         "        // Do something\r",
@@ -7220,24 +7259,33 @@
         "        method: 'PUT',\r",
         "        url: \"../API/identity/user/\" + $data.user.id,\r",
         "        data: {\r",
-        "            \"enable\": \"false\"\r",
+        "            \"enabled\": \"false\"\r",
         "        }\r",
         "    };\r",
         "    \r",
         "    await $http(req)\r",
         "    .success(function (data, status) {\r",
         "        if (status == 200) {\r",
-        "            notifier.success('¡Usuario desactivado!');\r",
+        "            notifier.warning('¡Usuario desactivado!');\r",
         "            $data.user.enabled = \"false\";\r",
         "        }\r",
         "    })\r",
         "    .error(function (data, status) {\r",
-        "        notifier.warning('¡Ocurrió un error! -> ' + data.message);\r",
+        "        notifier.alert('<b>¡Algo salió mal!</b> <br/><i> ' + data.message + '</i>');\r",
         "    })\r",
         "    .finally(function () {\r",
         "        // Do something\r",
         "    });\r",
         "};\r",
+        "\r",
+        "const reloadUsers = async ($http) => {\r",
+        "    await getUsers($http);\r",
+        "    $data.user = {};\r",
+        "    $data.membership = {};\r",
+        "    $data.role = {};\r",
+        "    $data.group = {};\r",
+        "    $data.search = null;\r",
+        "}\r",
         "\r",
         "const funcs = {\r",
         "    getMemberships,\r",
@@ -7251,7 +7299,8 @@
         "    addUser,\r",
         "    deleteUser,\r",
         "    enableUser,\r",
-        "    disableUser\r",
+        "    disableUser,\r",
+        "    reloadUsers\r",
         "}\r",
         "\r",
         "\r",
@@ -7282,6 +7331,10 @@
       "value" : [
         "false"
       ],
+      "exposed" : false
+    },
+    "search" : {
+      "type" : "constant",
       "exposed" : false
     }
   },
