@@ -51,7 +51,7 @@ input[type='number'].ng-invalid.ng-dirty, input[type='password'].ng-invalid.ng-d
 }
 
 .title p {
-    color: #233df9;
+    color: #111111;
     font-size: 4rem;
     font-weight: bold;
     margin: 0;
@@ -60,7 +60,7 @@ input[type='number'].ng-invalid.ng-dirty, input[type='password'].ng-invalid.ng-d
 .title-line {
     width: 150px;
     margin: 5px 0;
-    border-top: 4px solid #e6e6e6;
+    border-top: 4px solid #233df9;
 }
 
 .modal-container {
@@ -302,5 +302,7 @@ input[type='number'].ng-invalid.ng-dirty, input[type='password'].ng-invalid.ng-d
     padding: 0 25px;
 }
 
-
+.awn-toast-icon {
+    font-size: 35px;
+}
 
